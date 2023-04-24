@@ -1,0 +1,25 @@
+<!-- https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_nestedlists2 -->
+<style>
+  div {
+    text-align: start;
+  }
+</style>
+<div>
+  <h1>A list in a list in a list</h1>
+  <ul>
+    <% for(let d in drinks){ %>
+    <li><%= d %></li>
+    <% if(Object.keys(drinks[d]).length > 1) {%>
+    <ul>
+      <%} for(let i in drinks[d]){ %>
+      <li><%= i %></li>
+      <%if(Object.keys(drinks[d][i]).length > 1) {%>
+      <ul>
+        <%} for(let j in drinks[d][i]){ %>
+        <li><%= j %></li>
+        <%}if(Object.keys(drinks[d][i]).length > 1) {%>
+      </ul>
+    </ul>
+    <%}}}%>
+  </ul>
+</div>
