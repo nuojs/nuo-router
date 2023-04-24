@@ -1,0 +1,22 @@
+{
+  "name": "nuo-router",
+  "description": "front-end-routing",
+  "version": "1.0.0",
+  "main": "./src/nuo-router.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nuojs/nuo-router.git"
+  },
+  "keywords": [
+    "nuo", "nuo-router", "front-end-router","route","404", "not-found", "redirect"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuojs/nuo-router/issues"
+  },
+  "homepage": "https://github.com/nuojs/nuo-router"
+}
