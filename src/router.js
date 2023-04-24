@@ -2,13 +2,13 @@ nuo.get('./html', function(req){
     document.getElementById('root').innerHTML = '<div><h1>From pure HTML</h1></div>'
 })
 nuo.get('./fetch', async function(req){
-    const response = await fetch("./src/example.html")
+    const response = await fetch("./src/example/example.html")
     const text = await response.text()
     document.getElementById('root').innerHTML = text
     // nuo.loadScript()
 })
 nuo.get('./ejs', async function(req){
-    const response = await fetch("./src/example.ejs")
+    const response = await fetch("./src/example/example.ejs")
     const text = await response.text()
     let drink = {
         'Coffee': {}, 
