@@ -1,1 +1,81 @@
-<h1>404 Page Not Found</h1>
+
+<html>
+
+<head>
+  <title>Nuo-Router</title>
+  <script src="https://npmcdn.com/ejs/ejs.min.js"></script>
+  <style>
+    body{
+        padding: 50px;
+        text-align: center;
+        font-family: consolas;
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        margin-left: 15px;
+    }
+    /* ul {
+       list-style-type: none;
+    } */
+    a:focus {
+       background-color: yellow;
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <span id="root" >Hello world</span>
+  <br><br>
+  <a href="javascript:nuo.to('./html')">html</a>
+  <a href="javascript:nuo.to('./fetch')">.html</a>
+  <a href="javascript:nuo.to('./ejs')">.ejs</a>
+  <a href="javascript:err()"> 404</a>
+  <br><br>
+  <h2> nuo-router : front-end routing 404.html</h2>
+   <script src="./src/nuo-router.js"></script>
+    <script src="./src/router.js"></script>
+ <script>
+    function uniqueModulus(mod) {
+    let aiueo = "aiueo";
+    let bcdfg = "bcdfghjklmnpqrstvwxy";
+    let res = "";
+    if (mod % 2 != 0) {
+      res = aiueo[Math.floor(Math.random() * aiueo.length)];
+    } else {
+      res = bcdfg[Math.floor(Math.random() * bcdfg.length)];
+    }
+    return res;
+  }
+  var getRandomName = (t, e) => {
+    for (var r = "", n = t, o = 0; o < e; o++) {
+      r += uniqueModulus(o);
+    }
+    return r;
+  };
+    function err(){
+        let colors = ['blue','red','green','orange','purple']
+        let color = colors[Math.floor(Math.random() * 5)]
+        let randomName = getRandomName('',5)
+        nuo.to('./'+randomName, {color})
+    }
+ </script>
+</body>
+
+</html>
