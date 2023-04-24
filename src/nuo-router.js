@@ -35,7 +35,7 @@
                 return spl[spl.length - 1]
             },
             paths,
-            path: '.'+paths[0],
+            path: '.'+paths[paths.length - 1],
             pathname: loc.pathname
         }
     }
