@@ -1,5 +1,5 @@
 # nuo-router
-nuo-router : front-end routing 404.html
+nuo-router : vanila.js front-end routing
 <br>
 Demo
 <br>
